@@ -1,5 +1,5 @@
 import taichi as ti
-from field_helpers import get_adjacent, contain, nullify_boundary_flow
+from .field_helpers import get_adjacent, contain, nullify_boundary_flow
 
 def project(n: int, 
     h_velocity: ti.template(), 

@@ -1,10 +1,10 @@
 import taichi as ti
 import taichi.math as tim
-from diffusion import diffuse_density, diffuse_velocity
-from advection import advect_density, advect_velocity
-from projection import project
-from temporal_value_field import TemporalValueField
-from field_helpers import add_source
+from .diffusion import diffuse_density, diffuse_velocity
+from .advection import advect_density, advect_velocity
+from .projection import project
+from .temporal_value_field import TemporalValueField
+from .field_helpers import add_source
 
 @ti.data_oriented
 class FluidField:

@@ -1,6 +1,6 @@
 import taichi as ti
 import taichi.math as tim
-from field_helpers import contain, bilinear_interpolate_nearest, nullify_boundary_flow
+from .field_helpers import contain, bilinear_interpolate_nearest, nullify_boundary_flow
 
 def advect_density(n, dt, density, h_velocity, v_velocity):
   advect_kernel(n, dt, density, h_velocity, v_velocity)

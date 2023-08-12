@@ -1,6 +1,6 @@
 import taichi as ti
-from temporal_value_field import TemporalValueField
-from field_helpers import get_adjacent, contain, nullify_boundary_flow
+from .temporal_value_field import TemporalValueField
+from .field_helpers import get_adjacent, contain, nullify_boundary_flow
 
 
 def diffuse_density(n: int, dt: float, viscocity: float, density: TemporalValueField):

@@ -8,9 +8,16 @@
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/src/main.py",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "module": "poetry",
+      "args": [
+        "run",
+        "python",
+        "${workspaceFolder}/src/main.py"
+      ],
+      "stopOnEntry": false,
+      "python": "${workspaceFolder}/.venv/Scripts/python"
     }
   ]
 }
